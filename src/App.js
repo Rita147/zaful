@@ -18,9 +18,7 @@ function App() {
         <Grid item>
           <Nav />
         </Grid>
-        <div>
-          {/*<p style={{ color: "white", backgroundColor: "white" }}>hh</p>*/}
-        </div>
+
         <Grid item container>
           <Grid item xs={1} sm={2}></Grid>
           <Grid item xs={10} sm={8}>

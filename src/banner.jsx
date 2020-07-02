@@ -8,18 +8,35 @@ const useStyles = makeStyles((theme) => ({
   title: {
     display: "none",
     [theme.breakpoints.up("sm")]: {
-      display: "block",
+      display: "flex",
     },
     "font-size": "15px",
     color: "black",
     backgroundColor: "white",
     position: "relative",
     flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  offers: {
+    display: "none",
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+    },
+    "font-size": "15px",
+    color: "black",
+    backgroundColor: "#f8f8f8",
+    position: "relative",
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
   banner: {
     paddingTop: "15px",
   },
   BannerContainer: {
+    display: "none",
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+    },
     position: "relative",
     display: "block",
     justifyContent: "center",
@@ -88,6 +105,47 @@ const Banner = () => {
           href="#contained-buttons"
         >
           sale
+        </Button>
+      </div>
+      <div className={classes.offers}>
+        <Button
+          style={{
+            maxWidth: "120px",
+            maxHeight: "100px",
+            minWidth: "100px",
+            minHeight: "100px",
+            color: "black",
+            backgroundColor: "#f8f8f8",
+          }}
+          href="#contained-buttons"
+        >
+          Returns extended ! 60 days to return ➪➪
+        </Button>
+        <Button
+          style={{
+            maxWidth: "120px",
+            maxHeight: "100px",
+            minWidth: "100px",
+            minHeight: "100px",
+            color: "black",
+            backgroundColor: "#f8f8f8",
+          }}
+          href="#contained-buttons"
+        >
+          First Order Extra 15% Off Shop now ➪➪
+        </Button>
+        <Button
+          style={{
+            maxWidth: "150px",
+            maxHeight: "100px",
+            minWidth: "100px",
+            minHeight: "100px",
+            color: "black",
+            backgroundColor: "#f8f8f8",
+          }}
+          href="#contained-buttons"
+        >
+          FREE SHIPPING OVER $180 Shipping Info ➪➪
         </Button>
       </div>
       <div className={classes.BannerContainer}>
