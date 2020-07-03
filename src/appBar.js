@@ -13,6 +13,7 @@ import PersonOutline from "@material-ui/icons/PersonOutline";
 import LocalMallOutlined from "@material-ui/icons/LocalMallOutlined";
 import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -153,6 +154,8 @@ export default function PrimarySearchAppBar() {
           aria-haspopup="true"
           color="inherit"
         >
+          <Link to="/login"></Link>
+
           <PersonOutline />
         </IconButton>
         <p>Profile</p>
@@ -184,11 +187,10 @@ export default function PrimarySearchAppBar() {
               edge="end"
               aria-label="account of current user"
               aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
               color="inherit"
             >
               <PersonOutline />
+              <Link to="/login"></Link>
             </IconButton>
             <IconButton aria-label="show 17 new likes" color="inherit">
               <Badge badgeContent={17} color="secondary">

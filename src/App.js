@@ -1,31 +1,28 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Nav from "./appBar";
-import Banner from "./banner";
-import Plant from "./plant.jpg";
+import Home from "./Home";
+import Login from "./Login";
+
 function App() {
   return (
-    <div
-      style={{
-        // backgroundImage: `url(${Plant})`,
-        position: "fixed",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <Router>
       <Grid container direction="column">
         <Grid item>
           <Nav />
         </Grid>
-
-        <Grid item container>
-          <Grid item xs={1} sm={2}></Grid>
-          <Banner />
-          <Grid item xs={1} sm={2}></Grid>
-        </Grid>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+        </Switch>
       </Grid>
-    </div>
+    </Router>
   );
 }
 export default App;
