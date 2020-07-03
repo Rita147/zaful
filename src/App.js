@@ -8,7 +8,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url(${Plant})`,
+        // backgroundImage: `url(${Plant})`,
         position: "fixed",
         width: "100%",
         height: "100%",
@@ -21,9 +21,7 @@ function App() {
 
         <Grid item container>
           <Grid item xs={1} sm={2}></Grid>
-          <Grid item xs={10} sm={8}>
-            <Banner></Banner>
-          </Grid>
+          <Banner />
           <Grid item xs={1} sm={2}></Grid>
         </Grid>
       </Grid>

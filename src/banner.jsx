@@ -1,31 +1,28 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import { Container } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
+  container212: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "space-between",
+    width: "100%",
   },
   title: {
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-    },
-    "font-size": "15px",
+    display: "flex",
+
     color: "black",
     backgroundColor: "white",
-    position: "relative",
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flexDirection: "row-reverse",
+    justifyContent: "space-evenly",
+    alignItems: "flex-start",
   },
   offers: {
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-    },
-    "font-size": "15px",
+    display: "flex",
+    fontSize: "16px",
     color: "black",
     backgroundColor: "#f8f8f8",
-    position: "relative",
     flexDirection: "row",
     justifyContent: "space-around",
   },
@@ -33,89 +30,127 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "15px",
   },
   BannerContainer: {
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-    },
-    position: "relative",
-    display: "block",
+    paddingTop: 25,
+    display: "flex",
     justifyContent: "center",
     allignItems: "center",
-    position: "absolute",
-  },
-  background: {
-    backgroundImage: `url(require("./plant.jpg"))`,
   },
 }));
 const Banner = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.container212}>
       <div className={classes.title}>
         <Button
-          style={{ color: "black", backgroundColor: "white" }}
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
           href="#contained-buttons"
         >
-          New
+          Sale
         </Button>
         <Button
-          style={{ color: "#fe5269", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          Swimwear
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          Women
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          Tops
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          Dresses
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          men
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
-          href="#contained-buttons"
-        >
-          activewear
-        </Button>
-        <Button
-          style={{ color: "black", backgroundColor: "white" }}
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
           href="#contained-buttons"
         >
           accesories
         </Button>
         <Button
-          style={{ color: "black", backgroundColor: "white" }}
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
           href="#contained-buttons"
         >
-          sale
+          Activewear
+        </Button>
+        <Button
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          Men
+        </Button>
+        <Button
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          Dresses
+        </Button>
+        <Button
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          Tops
+        </Button>
+        <Button
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          Women
+        </Button>
+        <Button
+          style={{
+            color: "#fe5269",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          Swimwear
+        </Button>
+        <Button
+          style={{
+            color: "#2c3530",
+            backgroundColor: "white",
+            fontWeight: "bold",
+            fontSize: "12px",
+          }}
+          href="#contained-buttons"
+        >
+          New
         </Button>
       </div>
       <div className={classes.offers}>
         <Button
           style={{
-            maxWidth: "120px",
+            maxWidth: "200px",
             maxHeight: "100px",
             minWidth: "100px",
             minHeight: "100px",
-            color: "black",
+            color: "#2c3530",
             backgroundColor: "#f8f8f8",
+            fontWeight: "bold",
           }}
           href="#contained-buttons"
         >
@@ -123,12 +158,13 @@ const Banner = () => {
         </Button>
         <Button
           style={{
-            maxWidth: "120px",
+            maxWidth: "250px",
             maxHeight: "100px",
             minWidth: "100px",
             minHeight: "100px",
-            color: "black",
+            color: "#2c3530",
             backgroundColor: "#f8f8f8",
+            fontWeight: "bold",
           }}
           href="#contained-buttons"
         >
@@ -136,12 +172,13 @@ const Banner = () => {
         </Button>
         <Button
           style={{
-            maxWidth: "150px",
+            maxWidth: "220px",
             maxHeight: "100px",
             minWidth: "100px",
             minHeight: "100px",
-            color: "black",
+            color: "#2c3530",
             backgroundColor: "#f8f8f8",
+            fontWeight: "bold",
           }}
           href="#contained-buttons"
         >
@@ -149,8 +186,7 @@ const Banner = () => {
         </Button>
       </div>
       <div className={classes.BannerContainer}>
-        <img height="600" width="400" src={require("./dressN2.jpg")} />
-        <img height="500" width="400" src={require("./dressN1.jpg")} />
+        <img height="500" width="900" src={require("./dress.jpg")} />
       </div>
     </div>
   );

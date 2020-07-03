@@ -165,9 +165,6 @@ export default function PrimarySearchAppBar() {
       <AppBar color="inherit" position="static">
         <Toolbar>
           <img height="30" width="90" src={require("./zaful.png")} />
-          {/* <Typography className={classes.title} variant="overline" noWrap>
-            Free standard shipping on orders over ₪105
-          </Typography> */}
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
