@@ -147,6 +147,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>hearts</p>
       </MenuItem>
+
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           aria-label="account of current user"
@@ -154,8 +155,6 @@ export default function PrimarySearchAppBar() {
           aria-haspopup="true"
           color="inherit"
         >
-          <Link to="/login"></Link>
-
           <PersonOutline />
         </IconButton>
         <p>Profile</p>
@@ -189,8 +188,9 @@ export default function PrimarySearchAppBar() {
               aria-controls={menuId}
               color="inherit"
             >
-              <PersonOutline />
-              <Link to="/login"></Link>
+              <a href="/login">
+                <PersonOutline />
+              </a>
             </IconButton>
             <IconButton aria-label="show 17 new likes" color="inherit">
               <Badge badgeContent={17} color="secondary">

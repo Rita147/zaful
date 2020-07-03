@@ -10,9 +10,7 @@ function App() {
   return (
     <Router>
       <Grid container direction="column">
-        <Grid item>
-          <Nav />
-        </Grid>
+        <Nav />
         <Switch>
           <Route exact path="/">
             <Home />
